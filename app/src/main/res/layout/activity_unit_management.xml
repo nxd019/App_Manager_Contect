@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập thông tin đơn vị"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#F0F0F0"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/etUnitId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mã đơn vị"
+                android:inputType="text"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <EditText
+                android:id="@+id/etUnitName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên đơn vị"
+                android:layout_marginTop="8dp"
+                android:inputType="text"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <EditText
+                android:id="@+id/etUnitEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginTop="8dp"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <EditText
+                android:id="@+id/etUnitWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Website (tùy chọn)"
+                android:layout_marginTop="8dp"
+                android:inputType="textWebEditText"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <Button
+                android:id="@+id/btnUploadLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chọn logo (tùy chọn)"
+                android:layout_marginTop="8dp"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"/>
+
+            <ImageView
+                android:id="@+id/ivLogoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Logo Preview"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/etUnitAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ"
+                android:layout_marginTop="8dp"
+                android:inputType="textPostalAddress"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <EditText
+                android:id="@+id/etUnitPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số điện thoại"
+                android:layout_marginTop="8dp"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu thông tin"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"/>
+        <Button
+            android:id="@+id/btnDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem danh sách đơn vi"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"/>
+    </LinearLayout>
+</ScrollView>
